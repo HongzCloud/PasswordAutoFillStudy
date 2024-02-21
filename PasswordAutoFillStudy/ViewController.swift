@@ -15,11 +15,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpEmailTextField()
+        setUpPasswordTextField()
     }
 
     func setUpEmailTextField() {
-        emailTextField.textContentType = .emailAddress
+        emailTextField.textContentType = .username
         emailTextField.keyboardType = .emailAddress
+    }
+    
+    func setUpPasswordTextField() {
         passwordTextField.textContentType = .password
         passwordTextField.isSecureTextEntry = true
     }
